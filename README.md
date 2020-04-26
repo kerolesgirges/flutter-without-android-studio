@@ -25,7 +25,7 @@ sudo ln -s /usr/lib/android-sdk/cmdline-tools/tools/bin/* /usr/lib/android-sdk/t
 # NOTE: i will use ~/.profile as a matter of preference but most people will prefer using .xrc (where x is (zsh, bash, ...etc)) 
 echo -e "export ANDROID_SDK_ROOT=/usr/lib/android-sdk\nexport PATH=\$ANDROID_SDK_ROOT/cmdline-tools/tools/bin:\$PATH" >> ~/.profile
 ```
-## Step 2 (Download android-sdk):
+### Step 2 (Download android-sdk):
 This is a list of the very essential packages you should have to be able to run you app
 **NOTE:** you will definitely need more than these packages for production (i.e. the google play packages)
 ```
@@ -42,8 +42,35 @@ This is a list of the very essential packages you should have to be able to run 
   so you will download these packages 
   ```bash
   # the packages i have ignored should already exist in on your machine
-  # Notice that i didn't installed the latest versions it won't work it's a known issue and flutter's team is working on it
-  sdkmanager "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository" "platform-tools" "platforms;android-28"
+  # Notice that i didn't installed the latest versions it won't work it's a known issue and flutter's team are working on it
+  sudo `which sdkmanager` "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository" "platform-tools" "platforms;android-28"
+  # then accept the licenses
+  sdkmanager --licenses
   ```
-  ## Step 3 (The flutter side):
-  
+### Step 3 (The flutter side):
+#### Step 3.1 (flutter doctor check)
+first follow the instruction in the download like 
+then run `flutter doctor` the output should look like this
+```
+Doctor summary (to see all details, run flutter doctor -v):
+[✓] Flutter (Channel stable, v1.12.13+hotfix.9, on Linux, locale en_US.UTF-8)
+ 
+[!] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor
+      --android-licenses
+[!] Android Studio (not installed)
+[!] Connected device
+    ! No devices available
+
+! Doctor found issues in 3 categories.
+```
+these issue are ok if something really went wrong flutter will inform you when you run 
+#### Step 3.2 (testing):
+Any serious errors should appear here
+```
+flutter create my_app # This will take a long time in the first execution so don't worry
+cd ./my_app
+flutter run -v 
+```
+if everything went ok your app will run on your device as normal
+### Step 4 (prepare you text editor):

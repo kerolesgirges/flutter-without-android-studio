@@ -13,7 +13,7 @@ this is a step by step documentation on how to use flutter from scratch without 
 
 ## Steps:
 ### Step 1 (perpare your directory structure):
-Assuming you had followd the [What do we need]() section above you will have `/usr/lib/android-sdk` directory, create cmdline-tools directory inside it 
+Assuming you had followd the [What do we need](https://github.com/A-Siam/flutter-without-android-studio#what-do-we-need) section above you will have `/usr/lib/android-sdk` directory, create cmdline-tools directory inside it 
 ```bash
 sudo mkdir /usr/lib/android-sdk/cmdline-tools
 # unzip the content of command line tools to that folder

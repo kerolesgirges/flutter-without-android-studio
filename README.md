@@ -22,7 +22,7 @@ sudo unzip /path/for/your/command-line/tools/zip/commandlinetools-linux-*.zip /u
 # because flutter will seach for "/usr/lib/android-sdk/tools/bin" when it need the sdkmanager
 sudo ln -s /usr/lib/android-sdk/cmdline-tools/tools/bin/* /usr/lib/android-sdk/tools/bin
 # define the environmental variables and add the command line tools to path
-# NOTE: i will use ~/.profile but for a matter of preference but most people will prefer using .xrc (where x is (zsh, bash, ...etc) 
+# NOTE: i will use ~/.profile as a matter of preference but most people will prefer using .xrc (where x is (zsh, bash, ...etc)) 
 echo -e "export ANDROID_SDK_ROOT=/usr/lib/android-sdk\nexport PATH=\$ANDROID_SDK_ROOT/cmdline-tools/tools/bin:\$PATH" >> ~/.profile
 ```
 ## Step 2 (Download android-sdk):

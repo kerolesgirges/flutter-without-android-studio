@@ -42,7 +42,7 @@ This is a list of the very essential packages you should have to be able to run 
   so you will download these packages 
   ```bash
   # the packages i have ignored should already exist in on your machine
-  # Notice that i didn't installed the latest versions it won't work it's a known issue and flutter's team are working on it
+  # Notice that i didn't install the latest versions ,it won't work ,it's a known issue and flutter's team are working on it
   sudo `which sdkmanager` "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository" "platform-tools" "platforms;android-28"
   # then accept the licenses
   sdkmanager --licenses
@@ -74,3 +74,11 @@ flutter run -v
 ```
 if everything went ok your app will run on your device as normal
 ### Step 4 (prepare you text editor):
+#### Step 4.1 (vs-code users)
+All you have to do is to install `dart` and `flutter` plugins, now you are ready to go
+
+#### Step 4.2 (vim users)
+follow the installation instructions from you choosen plug-ins manager then install `coc` and `coc-flutter` mentioned above then you are ready to go
+
+## Result
+![This is my result](https://raw.githubusercontent.com/A-Siam/flutter-without-android-studio/master/Screenshot%20from%202020-04-26%2012-05-31.png?token=AIKY2BYTNYNAMXKWLVTFZV26V2MAK)

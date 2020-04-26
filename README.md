@@ -28,6 +28,7 @@ echo -e "export ANDROID_SDK_ROOT=/usr/lib/android-sdk\nexport PATH=\$ANDROID_SDK
 ```
 ### Step 2 (Download android-sdk):
 This is a list of the very essential packages you should have to be able to run you app
+
 **NOTE:** you will definitely need more than these packages for production (i.e. the google play packages)
 ```
   Path                        | Version | Description                    | Location                    

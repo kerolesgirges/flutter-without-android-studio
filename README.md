@@ -81,4 +81,4 @@ All you have to do is to install `dart` and `flutter` plugins, now you are ready
 #### Step 4.2 (vim users)
 follow the installation instructions from you choosen plug-ins manager then install `coc` and `coc-flutter` mentioned above then you are ready to go
 
-Tested on **UBUNTU 20.4** 
+Tested on **UBUNTU 20.04** 

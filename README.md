@@ -80,5 +80,4 @@ All you have to do is to install `dart` and `flutter` plugins, now you are ready
 #### Step 4.2 (vim users)
 follow the installation instructions from you choosen plug-ins manager then install `coc` and `coc-flutter` mentioned above then you are ready to go
 
-## Result
-![This is my result](https://raw.githubusercontent.com/A-Siam/flutter-without-android-studio/master/Screenshot%20from%202020-04-26%2012-05-31.png?token=AIKY2BYTNYNAMXKWLVTFZV26V2MAK)
+Tested on **UBUNTU 20.4** 
